@@ -122,8 +122,8 @@ export default function Features() {
   return (
     <div className="flex flex-col container py-16 mx-auto">
       {/* section 1 */}
-      <div className="flex flex-row w-full py-8">
-        <div className="w-1/2 md:py-10 py-5 items-center">
+      <div className="flex flex-col md:flex-row w-full py-8">
+        <div className=" w-full md:w-1/2 md:py-10 py-5 items-center order-2 md:order-1">
           <h2 className="text-5xl font-bold mb-5">
             Build more <span className="text-teal-500">seamless</span> and
             <span className="text-teal-500"> authentic</span> connections.
@@ -138,7 +138,7 @@ export default function Features() {
             you&apos;re trying to reach to.
           </p>
         </div>
-        <div className="w-1/2 flex justify-center items-center">
+        <div className="w-full md:w-1/2 flex justify-center items-center order-1 md:order-2">
           <Image
             src="/info.svg"
             alt="Brewmail"
@@ -150,7 +150,7 @@ export default function Features() {
       </div>
       {/* section 2 */}
       <div className="max-w-4xl mx-auto py-8">
-        <h1 className="text-6xl font-bold leading-tight mb-5">
+        <h1 className="sm:text-6xl text-4xl font-bold leading-tight mb-5">
           Turn conversations <br /> into{' '}
           <span className="relative inline-block">
             <span className="text-teal-500">opportunities</span>
@@ -210,9 +210,9 @@ export default function Features() {
         </div>
       </div>
       {/* section 5 */}
-      <div className="flex flex-col justify-center items-center -mt-36">
+      <div className="flex flex-col justify-center items-center">
         <Image
-          src="/section5.svg"
+          src="/filter-image.svg"
           alt="section5"
           width={100}
           height={100}
